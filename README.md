@@ -1,6 +1,8 @@
 ## Features
 -Personalized movie recommendations.
+
 -Easy-to-use Flask web interface.
+
 -Pretrained machine learning model for fast and accurate predictions.
 
 ## Prerequisites
