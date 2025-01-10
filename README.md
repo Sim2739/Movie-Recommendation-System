@@ -31,3 +31,6 @@ This project requires pretrained models and processed datasets stored as .pkl fi
 To download the movie_recommendation_system.pkl (large file): 
 
 https://drive.google.com/file/d/15Np-wLYPhahxnFGe7N6BqSA8lH6qRh20/view?usp=sharing
+
+## Run the flask app
+``python App.py``
