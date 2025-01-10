@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <form action="/recommend" method="POST">
+        <label for="movie_name">Enter your favourite movie:</label>
+        <input type="text" id="movie_name" name="movie_name" required>
+        <input type="submit" value="Get Recommendations" >
+        <div class="result-box"></div>
+    </form>
+
+
+    {% if recommended_movies %}
+      <h2>Movies recommended for you based on "{{movie_name}}":</h2>
+      <ul>
+        {% for movie in recommended_movies %}
+          <li>{{movie}}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <script src="/static/Autocomplete.js"></script>
+</body>
+</html>
